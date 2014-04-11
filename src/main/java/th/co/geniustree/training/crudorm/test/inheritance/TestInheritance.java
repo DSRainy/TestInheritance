@@ -12,21 +12,16 @@ package th.co.geniustree.training.crudorm.test.inheritance;
 public class TestInheritance {
 
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        dog.eat();
-        dog.setName("Rainy");
-        System.out.println(dog.getName());
+        animalDoing(new Cat(), "Rainy");
+        animalDoing(new Dog(), "555");
+        animalDoing(new Rabbit(), "Thanthathon");
+    }
+
+    private static void animalDoing(Animal animal, String name) {
+        animal.eat();
+        animal.setName(name);
+        System.out.println(animal.getName());
         System.out.println("------------------------------");
 
-        Cat cat = new Cat();
-        cat.eat();
-        cat.setName("5555");
-        System.out.println(cat.getName());
-        System.out.println("------------------------------");
-
-        Rabbit rabbit = new Rabbit();
-        rabbit.eat();
-        rabbit.setName("Thanthathon");
-        System.out.println(rabbit.getName());
     }
 }
