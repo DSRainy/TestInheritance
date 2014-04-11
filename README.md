@@ -1,0 +1,4 @@
+TestInheritance
+===============
+
+Testing an Inheritance
